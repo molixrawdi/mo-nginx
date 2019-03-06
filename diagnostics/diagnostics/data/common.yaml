@@ -1,0 +1,3 @@
+---
+diagnostics::netoolsone : 'nmap'
+diagnostics::netoolstwo : 'net-tools'
