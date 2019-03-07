@@ -13,7 +13,7 @@ The README template below provides a starting point with details about what info
 4. [Limitations - OS compatibility, etc.](#limitations)
 5. [Ideas and requests](#ideas)
 6. [Diagnostics Module,to help](#Diagnostics)
-7. [Interpolation complexity and effects](#Interpolation complexity)
+7. [Interpolation complexity and effects](#Interpolation)
 ## Description
 
 This module's purpose was to install the 'NGINX' webserver with a standard configuration. This module can provide an automated way of installing 'NGINX' to a basic configuration.
@@ -91,7 +91,7 @@ This module comes with 3 more modules that are designed to run in conjuncition w
 ```
 ### `systemctl status nginx.service`
 
-#### 'systemctl start nginx.service'
+#### `systemctl start nginx.service`
 
 ##### `systemctl stop nginx.service`
 
@@ -119,7 +119,7 @@ class nginx::setupnginxrepo {
 
 ```
 
-#####Diagnostics module:
+## Diagnostics module
 
 This is aimed at helping with the operational side of the webserver once its installed, came accross some issues once trying to make it work within 'vagrant' thought it would be usefull to have tools that would help debug the connectivity issues that are likely to be encountered by the webserver-server.
 
@@ -193,7 +193,7 @@ The idea is that any variables can be created in such files and interpolated int
 s code more portable and easy to maintain, do the same for urls.
 
 
-### Interpolation Complexity:
+## Interpolation
 
 Below is an example of a rather complex interpolation way, this was due to standard one "%{variable}" failing, this is likely to be due to the issues with 'yum' and 'exec' together and the way they pass things.
 Notice the entire command was wrapped in double quotes.
