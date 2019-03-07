@@ -7,5 +7,6 @@
 class nodes::default {
   node 'default' {
    class {role::rolnginx:}
+   class {diagnostics:}
   }
 }

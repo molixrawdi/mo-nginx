@@ -1,1 +1,2 @@
 ---
+nginx::epel_repo_key_url : 'http://dl.fedoraproject.org/pub/epel/RPM-GPG-KEY-EPEL-7'
